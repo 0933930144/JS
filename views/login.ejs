@@ -16,13 +16,13 @@
         <div class="form login">
             <div class="form-content">
                 <header>Login</header>
-                <form action="#">
+                <form action="/login" method="post">
                     <div class="info">
-                        <input type="" placeholder="Email" class="input">
+                        <input type="" placeholder="Email" class="input" name="email">
                     </div>
 
                     <div class="info">
-                        <input type="" placeholder="Password" class="password">
+                        <input type="" placeholder="Password" class="password" name="password">
                         <i class='bx bx-hide eye-icon'></i>
                     </div>
 
@@ -31,7 +31,7 @@
                     </div>
 
                     <div class="info button">
-                        <button>Login</button>
+                        <button type="submit">Login</button>
                     </div>
                 </form>
 
