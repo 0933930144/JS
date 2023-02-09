@@ -3,6 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var bodyParser = require("body-parser");
+var connect = require('./db/connectDB')
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -33,6 +35,8 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development

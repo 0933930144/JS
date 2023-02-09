@@ -9,8 +9,10 @@ router.get("/login", AccountController.getLogin);
 
 router.post("/login", AccountController.postLogin);
 
-router.get("/signup", AccountController.getSingup)
+router.get("/signup", AccountController.getSignup);
 
-router.get("/layout", AccountController.getLayout)
+router.post("/signup", AccountController.postSignup);
+
+router.get("/layout", AccountController.getLayout);
 
 module.exports = router;
