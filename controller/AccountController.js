@@ -1,21 +1,20 @@
 var connect = require("../db/connectDB");
 class AccountController {
   getHome = async (req, res) => {
-    res.render("home", { title: "Home" });
+    res.render("home/home", { title: "Home" });
   };
   getLayout = async (req, res) => {
     res.render("layout", { title: "Layout" });
   };
   getSignup = async (req, res) => {
-    res.render("signup", { title: "Signup" });
+    res.render("signup", { title: "Signup", layout: false });
   };
   getLogin = async (req, res) => {
-    res.render("login", { title: "Admin hello" });
+    res.render("login", { title: "Admin hello", layout: false });
   };
 
   postSignup = async (req, res) => {
     const { email, password, comfirmpassword } = req.body;
-    console.log("req.body", req.body);
     return res.redirect("/layout");
   };
 

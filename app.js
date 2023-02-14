@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var bodyParser = require("body-parser");
+var expressLayouts = require("express-ejs-layouts");
 var connect = require('./db/connectDB')
 
 var indexRouter = require('./routes/index');
@@ -21,9 +22,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(expressLayouts);
+app.set("layout", "./layouts/layout");
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use(express.static(path.join(__dirname, 'public')));
+app.use("/asset", express.static(__dirname + "public/asset"));
 app.use('/css', express.static(__dirname + 'public/css'));
 app.use('/js', express.static(__dirname + 'public/js'));
 app.use('/img', express.static(__dirname + 'public/img'));
