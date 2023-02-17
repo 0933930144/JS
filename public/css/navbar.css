@@ -1,0 +1,11 @@
+.navbar-nav .nav-link {
+    color: black;
+}
+
+#navbar-right {
+    position: fixed; right: 10px;
+
+}
+#navbar-right .nav-item a:hover{
+    color: red;
+}

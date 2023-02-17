@@ -27,8 +27,10 @@ app.set("layout", "./layouts/layout");
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
 app.use(express.static(path.join(__dirname, 'public')));
 app.use("/asset", express.static(__dirname + "public/asset"));
+app.use("/svg", express.static(__dirname + "public/svg"));
 app.use('/css', express.static(__dirname + 'public/css'));
 app.use('/js', express.static(__dirname + 'public/js'));
 app.use('/img', express.static(__dirname + 'public/img'));
