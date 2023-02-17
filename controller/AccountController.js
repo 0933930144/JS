@@ -1,4 +1,5 @@
-var connect = require("../db/connectDB");
+const connect = require("../db/connectDB");
+const Account = require("../model/account")
 class AccountController {
   getHome = async (req, res) => {
     res.render("home/home", { title: "Home" });
@@ -23,18 +24,16 @@ class AccountController {
     
     if (!email || !password) return res.redirect("/login");
     try {
-      connect.query(
-        "SELECT * FROM account WHERE email=? AND password=?",
-        [email, password],
-        function (err, data) {
-          if (err || data.length == 0) {
-            if (err === null) return res.redirect("/login");
+      Account.findByEmail(email, (error, result) => {
+        if (error) return res.redirect("/login");
+        else {
+          if(password === result?.[0]?.password) {
+            return res.redirect("/")
           } else {
-            if (data === null) return res.redirect("/login");
-            return res.redirect("/");
+             return res.redirect("/login");
           }
         }
-      );
+      }); 
     } catch (error) {
       console.log(error);
     }

@@ -4,7 +4,7 @@
 }
 
 *{
-  font-family: 'Times New Roman', Times, serif ;
+  font-family: 'Times New Roman', Times, serif;
   margin:-8.5px;   
   box-sizing: border-box;
   text-transform: capitalize;
@@ -33,6 +33,7 @@ section{
   text-align: center;
   padding:25px 0
 }
+
 
 .heading span{
   font-size: 20px;
