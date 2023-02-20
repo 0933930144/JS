@@ -17,19 +17,42 @@
                 <header>Signup</header>
                 <form action="/signup" method="post">
                     <div class="info">
-                        <input type="" placeholder="Email" class="input" name="email">
+                        <input 
+                            type="email" 
+                            placeholder="Email" 
+                            class="input" 
+                            name="email" 
+                        />
                     </div>
-
                     <div class="info">
-                        <input type="" placeholder="Password" class="password" name="password">
-                        <i class='bx bx-hide eye-icon'></i>
+                        <input 
+                            id="password" 
+                            type="password" 
+                            placeholder="Vui lòng nhập mật khẩu" 
+                            class="password"
+                            name="password" 
+                        />
+                        <div onclick="togglePassword('password')">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
                     </div>
-
                     <div class="info">
-                        <input type="" placeholder="Confirm password" class="password" name="comfirmpassword">
-                        <i class='bx bx-hide eye-icon'></i>
+                        <input 
+                            id="confirmPassword"
+                            type="password" 
+                            placeholder="Vui lòng nhập mật khẩu" 
+                            class="password" 
+                            name="confirmPassword"
+                        />
+                        <div onclick="togglePassword('confirmPassword')">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
                     </div>
-                    
+                    <% if (typeof message !=='undefined' ) { %>
+                        <p style="color: red; margin-top: 10px; text-align: center;">
+                            <%= message %>
+                        </p>
+                    <% } %>
                     <div class="info button">
                         <button type="submit">Signup</button>
                     </div>
@@ -58,6 +81,16 @@
 
         </div>
     </section>
+    <script>
+        function togglePassword(id) {
+            const password = document.getElementById(id);
+            if (password.type === "password") {
+                password.type = "text";
+            } else {
+                password.type = "password";
+            }
+        }
+    </script>
 </body>
 
 </html>

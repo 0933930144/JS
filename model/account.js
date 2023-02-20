@@ -1,5 +1,4 @@
 var connect = require("../db/connectDB");
-
 class Account {
   findAll = (result) => {
     connect.query("SELECT * FROM account", function (err, data) {
@@ -23,10 +22,10 @@ class Account {
       }
     );
   };
-  create = (email, result) => {
+  create = (account, result) => {
     connect.query(
-      "INSERT INTO * FROM account WHERE email=?",
-      [email],
+      "INSERT INTO account (email, password) values (?, ?)",
+      [account.email, account.password],
       function (err, data) {
         if (err || data.length == 0) {
           result(err, null);

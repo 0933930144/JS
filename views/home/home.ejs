@@ -1,38 +1,62 @@
-<section class="home" id="home" style="margin-top: 80px;">
-    <div class="content">
-        <h3>Khách sạn</h3>
-        <p>Lưu lại các điểm đến trong mơ và khám phá những hoạt động độc đáo nhất</p>
+<div id="banner-home">
+    <div style="position: relative;">
+        <div class="content">
+            <p style="font-size: 60px;">Khách sạn</p>
+            <p style="font-size: 20px;">Lưu lại các điểm đến trong mơ và khám phá những hoạt động độc đáo nhất</p>
+        </div>
+        <div class="banner-container">
+            <img src="https://res.klook.com/image/upload/v1670396889/chvnwkuco13yi2b2uyad.png" id="banner" width="100%" height="300px"></img>
+        </div>
     </div>
-    <div class="banner-container">
-        <img src="/img/449.jpg" id="banner"></img>
+    <form action="">
+        <div id="form-booking">
+            <div class="row" style="padding: 16px;">
+                <div class="col-sm-3">
+                    <div style="background-color: #f5f5f5; padding: 8px; border-radius: 10px;">
+                        <div style="color: #757575;">Điểm đến</div>
+                        <input type="text" placeholder="Điền vào đây...">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div style="background-color: #f5f5f5;  padding: 8px; border-radius: 10px;">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div  style="color: #757575;">Ngày đặt</div>
+                                <input type="date" placeholder="Điền vào đây...">
+                            </div>
+                            <div class="col-sm-6">
+                                <div  style="color: #757575;">Ngày trả</div>
+                                <input type="date" placeholder="Điền vào đây...">
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div style="background-color: #f5f5f5;  padding: 8px; border-radius: 10px;">
+                        <div  style="color: #757575;">Số người</div>
+                        <input type="number" placeholder="Điền vào đây...">
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div style="background-color: #f5f5f5;  padding: 18px; border-radius: 10px; background: #ff5b00; color: white; font-size: 22px; font-weight: 600; text-align: center;">
+                        <div>Tìm kiếm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div style="margin: 40px;">
+        <h2>Nghỉ dưỡng với gói ưu đãi</h2>
+        <div style="display: flex;">
+            <% category.map((item) => { %>
+                <div style="margin-left: 10px; position: relative;">
+                    <img src="<%= item.banner %>" width="200px" height="200px" style="border-radius: 10px; border: 1px solid rgb(151, 150, 150);"/>
+                    <h3 style="position: absolute; bottom: 10px; color: white; left: 40px; font-weight: 600;"><%= item.tilte %></h3>
+                </div>
+            <% }) %>
+        </div>
     </div>
-
-</section>
-<section class="book" id="book">
-    <h1 class="heading">
-        <span>Đặt phòng ngay</span>
-    </h1>
-    <div class="row">
-        <form action="">
-            <div class="inputBox">
-                <h3>Điểm đến</h3>
-                <input type="text" placeholder="Điền vào đây...">
-            </div>
-            <div class="inputBox">
-                <h3>Số người</h3>
-                <input type="number" placeholder="Điền vào đây...">
-            </div>
-            <div class="inputBox">
-                <h3>Checkin</h3>
-                <input type="date">
-            </div>
-            <div class="inputBox">
-                <h3>Checkout</h3>
-                <input type="date">
-            </div>
-            <input type="submit" class="btn" value="Book Now">
-        </form>
+    <div>
+        <h2>Các nơi lưu trú nổi bật</h2>
     </div>
-</section>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="script.js"></script>
+</div>
