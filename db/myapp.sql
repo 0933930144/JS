@@ -66,7 +66,16 @@ INSERT INTO `category` (`id`, `banner`, `tilte`) VALUES
 (2, 'https://phongcachviettravel.vn/wp-content/uploads/2022/12/slide-du-lich-hanh-huong.png', 'category 2'),
 (3, 'https://phongcachviettravel.vn/wp-content/uploads/2022/12/slide-du-lich-hanh-huong.png', 'categori 24'),
 (4, 'https://phongcachviettravel.vn/wp-content/uploads/2022/12/slide-du-lich-hanh-huong.png', 'categori 24');
-
+(5, 'https://phongcachviettravel.vn/wp-content/uploads/2022/12/slide-du-lich-hanh-huong.png', 'categori 24');
+(6, 'https://phongcachviettravel.vn/wp-content/uploads/2022/12/slide-du-lich-hanh-huong.png', 'categori 24');
+(7, 'https://phongcachviettravel.vn/wp-content/uploads/2022/12/slide-du-lich-hanh-huong.png', 'categori 24');
+(8, 'https://phongcachviettravel.vn/wp-content/uploads/2022/12/slide-du-lich-hanh-huong.png', 'categori 24');
+(9, 'https://phongcachviettravel.vn/wp-content/uploads/2022/12/slide-du-lich-hanh-huong.png', 'categori 24');
+(10, 'https://phongcachviettravel.vn/wp-content/uploads/2022/12/slide-du-lich-hanh-huong.png', 'categori 24');
+(11, 'https://phongcachviettravel.vn/wp-content/uploads/2022/12/slide-du-lich-hanh-huong.png', 'categori 24');
+(12, 'https://phongcachviettravel.vn/wp-content/uploads/2022/12/slide-du-lich-hanh-huong.png', 'categori 24');
+(13, 'https://phongcachviettravel.vn/wp-content/uploads/2022/12/slide-du-lich-hanh-huong.png', 'categori 24');
+(14, 'https://phongcachviettravel.vn/wp-content/uploads/2022/12/slide-du-lich-hanh-huong.png', 'categori 24');
 -- --------------------------------------------------------
 
 --

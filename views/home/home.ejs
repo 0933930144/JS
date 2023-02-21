@@ -1,46 +1,46 @@
 <div id="banner-home">
     <div style="position: relative;">
         <div class="content">
-            <p style="font-size: 60px;">Khách sạn</p>
-            <p style="font-size: 20px;">Lưu lại các điểm đến trong mơ và khám phá những hoạt động độc đáo nhất</p>
+            <p style="font-size: 60px; font-family:-apple-system;">Khách sạn</p>
+            <p style="font-size: 20px; font-family:-apple-system;">Lưu lại các điểm đến trong mơ và khám phá những hoạt động độc đáo nhất</p>
         </div>
         <div class="banner-container">
             <img src="https://res.klook.com/image/upload/v1670396889/chvnwkuco13yi2b2uyad.png" id="banner" width="100%" height="300px"></img>
         </div>
     </div>
     <form action="">
-        <div id="form-booking">
-            <div class="row" style="padding: 16px;">
-                <div class="col-sm-3">
-                    <div style="background-color: #f5f5f5; padding: 8px; border-radius: 10px;">
-                        <div style="color: #757575;">Điểm đến</div>
-                        <input type="text" placeholder="Điền vào đây...">
+        <div id="form-booking" style="border-radius: 30px;">
+            <div class="row" style="padding:10px; " >
+                <div class="col-sm-3" >
+                    <div style="background-color: #f5f5f5; padding: 20px; margin: 0 40px; border-radius: 30px;">
+                        <div style="color: #757575; font-weight: 600;">Điểm đến</div>
+                        <input id="booking-text" type="text" placeholder="Nhập điểm đến..." style="width: 300px; border-radius: 10px;border: none; outline: none;">
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div style="background-color: #f5f5f5;  padding: 8px; border-radius: 10px;">
+                    <div style="background-color: #f5f5f5; padding: 20px; margin-right:35px; border-radius: 30px;">
                         <div class="row">
                             <div class="col-sm-6">
-                                <div  style="color: #757575;">Ngày đặt</div>
-                                <input type="date" placeholder="Điền vào đây...">
+                                <div  style="color: #757575; font-weight: 600;">Ngày đặt</div>
+                                <input id="booking-text" type="date" placeholder="Điền vào đây..." style="width: 180px; border-radius: 10px; border-color: #bdbdbd;">
                             </div>
                             <div class="col-sm-6">
-                                <div  style="color: #757575;">Ngày trả</div>
-                                <input type="date" placeholder="Điền vào đây...">
+                                <div  style="color: #757575; font-weight: 600;">Ngày trả</div>
+                                <input id="booking-text" type="date" placeholder="Điền vào đây..." style="width: 180px; border-radius: 10px; border-color: #bdbdbd;">
                             </div>
                         </div> 
                     </div>
                 </div>
                 <div class="col-sm-3">
-                    <div style="background-color: #f5f5f5;  padding: 8px; border-radius: 10px;">
-                        <div  style="color: #757575;">Số người</div>
-                        <input type="number" placeholder="Điền vào đây...">
+                    <div style="background-color: #f5f5f5;  padding: 20px; border-radius: 30px;">
+                        <div  style="color: #757575; font-weight: 600;">Số người</div>
+                        <input id="booking-text" type="number" placeholder="Điền vào đây..." style="width: 180px; border-radius: 10px;border: none; outline: none; ">
                     </div>
                 </div>
                 <div class="col-sm-2">
-                    <div style="background-color: #f5f5f5;  padding: 18px; border-radius: 10px; background: #ff5b00; color: white; font-size: 22px; font-weight: 600; text-align: center;">
-                        <div>Tìm kiếm</div>
-                    </div>
+                        <button id="btn">
+                            Tìm Kiếm   
+                        </button>
                 </div>
             </div>
         </div>
@@ -59,4 +59,6 @@
     <div>
         <h2>Các nơi lưu trú nổi bật</h2>
     </div>
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
 </div>
